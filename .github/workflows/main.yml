@@ -3,7 +3,7 @@ on:
   push:
     branches: [ master ]
 jobs:
-  fetch-toolchain:
+  test-independent-run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
