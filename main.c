@@ -13,6 +13,7 @@ void signal_handler(int sig)
 }
 
 
+// Here, a set of functions that the dynamically compiled script has to have get typedefed.
 typedef char* (*script_hello)(void);
 typedef char* (*script_bye)(void);
 
