@@ -1,4 +1,4 @@
-#include "libtcc.h"
+#include "tcc_local/libtcc.h"
 
 #include <stdint.h>
 #include <stdio.h>
