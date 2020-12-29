@@ -1,4 +1,4 @@
-This is a very simple example of tinycc's dynamic compilation feature.
+This is a very simple example of **tinycc**'s dynamic compilation feature.
 
 Your C application can compile another C source file(s). You can play around with this running:
 
@@ -12,3 +12,14 @@ file. The running application should start printing the new strings.
 
 I'll hopefully update this with checking if the file was modified, instead of running the basic
 `while` loop.
+
+## Contents of this repo
+
+This example should be self contained. You should need to install anything for it to work. The files
+listed below can be fetched from the **tinycc** build directory. Just clone the **tinycc** repo and
+build it.
+
+- `libtcc1.a` - a runtime dependency necessary for JIT (just-in-time compilation).
+- `libtcc.a` - a compile time dependency. This gets linked statically.
+- `libtcc.h` - header for the **tinycc** API.
+- `tcclib.h` - header runtime `libtcc1.a` runtime dependency.
