@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd $GITHUB_WORKSPACE && make
-      - run: timeout 1 $GITHUB_WORKSPACE/main %GITHUB_WORKSPACE/target.c
+      - run: cd $GITHUB_WORKSPACE && timeout 1 main target.c
