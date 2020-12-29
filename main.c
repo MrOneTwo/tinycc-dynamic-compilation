@@ -46,9 +46,8 @@ compile_program(script_t* script)
     return -1;
   }
 
-  tcc_set_lib_path(tcc, ".");
-  tcc_add_include_path(tcc, ".");
-  tcc_add_library_path(tcc, ".");
+  tcc_set_lib_path(tcc, "./lib");
+  tcc_add_include_path(tcc, "./include");
 
   tcc_set_error_func(tcc, 0x0, tcc_error);
   tcc_set_options(tcc, "-g");
