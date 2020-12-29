@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <signal.h>
+
+
+void signal_handler(int sig)
+{
+  exit(EXIT_SUCCESS);
+}
 
 
 typedef char* (*script_hello)(void);
@@ -81,6 +88,8 @@ compile_program(script_t* script)
 int
 main(int argc, char* argv[])
 {
+  signal(SIGINT, signal_handler);
+
   script_t script;
   script.path = argv[1];
 
