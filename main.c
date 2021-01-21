@@ -82,6 +82,8 @@ compile_program(script_t* script)
 
   script->hello = (script_hello)tcc_get_symbol(tcc, "target_hello");
   script->bye = (script_bye)tcc_get_symbol(tcc, "target_bye");
+  
+  return 0;
 }
 
 
